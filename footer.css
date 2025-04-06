@@ -1,0 +1,135 @@
+.footer{
+ padding: 50px 64px;
+ background-color: var(--secondary-color);
+ color: var(--primary-color);
+ font-family: "Oxanium", sans-serif;
+
+}
+
+.footer-content-wrapper{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 2rem;
+}
+
+.footer-content-left{
+ width: 48%;
+ display: flex;
+ margin: 1rem 0 3rem 0;
+}
+.footer-column{
+ width: 33%;
+}
+
+.footer-content-right{
+width: 35%;
+
+}
+.footer-link{
+padding-top: 8.09px;
+padding-bottom: 8.09px;
+font-size: var(--fourteen-pixel);
+font-weight: 300;
+display: flex;
+align-items: center;
+
+}
+
+.footer-link img{
+width: 23px;
+height: 23px;
+margin-right: 0.5rem;
+}
+
+.newsletter{
+color: var(--footer-color);
+font-family: "new-alphabet", sans-serif;
+font-size: 16px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+.footer-copyright-wrapper{
+ color: var(--footer-color);
+ text-transform: uppercase;
+
+}
+
+.footer-privacy-policy{
+ font-size: 12px;
+ margin-top: 14px;
+}
+
+.form-wrapper{
+display: flex;
+width: 100%;
+height: 48px;
+gap: 16.18px;
+
+}
+.form-input{
+ flex: 1;
+ padding: 10px;
+ background-color: transparent;
+ border: 1px solid var(--primary-color);
+ font-family: "Oxanium", sans-serif;
+ color:var(--primary-color);
+ font-size: var(--sixteen-pixel);
+}
+
+.form-input::placeholder{
+ font-family: "Oxanium", sans-serif;
+color:var(--primary-color);
+font-size: var(--sixteen-pixel);
+}
+
+.subscribe-button{
+
+padding: 12px 24px;
+font-family: "Oxanium", sans-serif;
+color: var(--footer-color);
+font-size: var(--sixteen-pixel);
+appearance: none;
+cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1024px){
+ .footer{
+  padding: 30px 26px;
+ }
+ .footer-content-wrapper{
+  flex-direction: column;
+ }
+ .footer-content-left,.footer-content-right{
+  width: 100%;
+ }
+
+ .footer img{
+  width: auto;
+ }
+ .footer-link img{
+  width: 23px;
+ }
+
+.footer-privacy-policy{
+ margin-bottom: 1rem;
+}
+
+.footer-link{
+ font-size: var(--ten-pixel);
+}
+
+.newsletter,.footer-copyright-wrapper{
+ font-size: var(--twelve-pixel);
+}
+}
+
+@media only screen and (max-width: 400px){
+ .footer img{
+  width: 100%;
+ }
+
+ .footer-link img{
+  width: 23px;
+ }
+}

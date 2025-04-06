@@ -1,0 +1,253 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+ 
+ }
+ 
+ .free-shipping{
+  padding: 20px 0;
+  text-align: center;
+ text-transform: uppercase;
+ background: var(--secondary-color);
+ color: var(--primary-color);
+ font-size: var(--fourteen-pixel);
+ border-bottom-right-radius: 4.05px;
+ border-bottom-left-radius: 4.05px;
+ 
+ 
+ }
+ 
+ .header-main
+ {
+  padding: 20px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+ 
+ }
+ 
+ .header-img-wrapper{
+  width: 27rem;
+ }
+ .header-img-wrapper img{
+  cursor: pointer;
+ }
+ .header-items{
+  display: flex;
+ 
+  flex: 1;
+  justify-content: space-between;
+ }
+ 
+ .item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.item a {
+  text-decoration: none;
+  color: #222;
+}
+.item a:hover {
+  color: #d8b24a;
+}
+ .item-dropdown{
+  position: relative;
+  display: flex;
+  align-items: center;
+ 
+ 
+ }
+ 
+ .item-dropdown img {
+  width: 10px;
+  height: 10px;
+  margin-left: 6px;
+}
+ 
+ .item-dropdown-content{
+  position: absolute;
+  left: 0;
+ top: 0; width: 100%;
+  height: auto;
+  opacity: 0;
+  padding: 30px 10px;
+ }
+ 
+ .item-dropdown:hover .item-dropdown-content{
+ opacity: 1;
+ }
+ 
+ .header-buttons{
+  display: flex;
+  width: 30rem;
+  justify-content: flex-end;
+  align-items: center;
+ 
+ }
+ 
+ .header-buttons button{
+  background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);
+  padding: 12.14px 24.27px;
+  border: none;
+  border-radius: 505.64px;
+  font-size:var(--eighteen-pixel) ;
+  color: var(--secondary-bg);
+  cursor: pointer;
+ margin-left: 20px;
+ display: flex;
+ align-items: center;
+ }
+ 
+ .header-search-field-hidden{
+  display: none;
+  width: 10%;
+  margin-left: 2rem;
+ 
+ }
+ 
+ .header-search{
+  width: 100%;
+  background-color: var(--search-field);
+ border: none;
+ height: 42px;
+ border-radius: 25px;
+ padding: 0 16px 0 60px;
+ font-size: var(--fourteen-pixel);
+ }
+ 
+ .header-search::placeholder{
+  color: var(--secondary-bg);
+ font-weight: 500;
+ }
+ 
+ .header-buttons button img{
+  width: 13px;
+  margin-left: 29px;
+ }
+ 
+ 
+ .header-item-hidden{
+  display: none;
+ }
+ 
+ .search-visible{
+  width: calc(100% + 22rem);
+ display: flex;
+ }
+ 
+ .search-icon{
+  cursor: pointer;
+ }
+ .header-mobile-main{
+ display: none;}
+ @media only screen and (min-width: 1024px) and (max-width: 1200px){
+  .header-img-wrapper{
+   width: auto
+   ;
+  }
+  .header-buttons{
+   width: auto;
+ 
+  }
+ 
+  .header-items{
+   justify-content: space-around;
+  }
+ 
+  .search-visible{
+   width: 52%;
+   margin-left: unset;
+  }
+  
+ }
+ 
+ @media only screen and (max-width: 1024px){
+  .header-main{
+   display: none;
+  }
+  .header-mobile-main{
+   display: flex;
+   padding: 20px 26px;
+  }
+ 
+ .header-img-wrapper{
+  width: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+ }
+ .alcami-icon-wrapper{
+ width: 80px;
+ height: 40px;
+ }
+ .alcami-header-icon{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ }
+  .header-mobile-items{
+ visibility: hidden;  position: fixed;
+   top: 0;
+   right: -100%;
+   display: flex;
+   flex-direction: column;
+   transition: right 0.3s ease-in-out;
+ background-color: var(--percent-white);
+ width: 100%;
+ height: 100%;
+ z-index: 10;
+ padding: 20px;
+  }
+  .header-mobile-active{
+   visibility: visible;
+   right: 0;
+   transition: right 0.3s ease-in-out;
+  }
+ 
+  .hamburger-header{
+   height: 40px;
+   width: 40px;
+  }
+  .hamburger-header img{
+   width: 100%;
+   height: 100%;
+  }
+ 
+  .free-shipping{
+   font-size: var(--ten-pixel);
+  }
+ 
+  .close-icon{
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+   margin-left: auto;
+   margin-bottom: 1rem;
+  }
+ 
+  .item{
+   margin-bottom: 1rem;
+  }
+  .close-icon img{
+   width: 100%;
+   height: 100%;
+  }
+ 
+  .header-buttons{
+   width: unset;
+   justify-content: center;
+  }
+ 
+  .header-buttons button{
+   margin: unset;
+  }
+  
+ }

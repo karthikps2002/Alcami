@@ -1,0 +1,98 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body{
+ width: 100%;
+ height: 100%;
+}
+@font-face {
+ font-family: 'new-alphabet';
+ src: url('fonts/NewRailAlphabet-White.otf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face{
+ font-family: 'Oxanium';
+ src: url('fonts/Oxanium-ExtraLight.ttf') format('truetype');
+}
+body{
+ font-family: "new-alphabet", sans-serif;
+font-weight: 400;
+font-style: normal;
+display: flex;
+flex-direction: column;
+
+background: url("images/lineargradientbg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+color: var(--secondary-color);
+}
+
+.footer-main-container{
+ margin-top: auto;
+}
+
+.homepage-main-container{
+ flex: 1;
+ padding-top: 8rem;
+}
+
+a{
+ text-decoration: none;
+ color: unset;
+}
+
+:root{
+ --primary-color: #FFFFFF;
+ --secondary-color: #322D2D;
+ --secondary-bg: #000000;
+ --search-field: #D9D9D9;
+
+ --footer-color: #DEA453;
+
+ --homepage-black: rgba(50, 45, 45, 1);
+ --homepage-gray: rgba(102, 102, 102, 1);
+ --guarantee-bg: rgba(249, 249, 249, 1);
+ --homepage-light-gray: rgba(217, 217, 217, 1);
+ --subscribe-cards: rgba(214, 213, 213, 1);
+ --percent-white: rgba(255, 255, 255, 1);
+ --table-bg: rgba(240, 238, 230, 1);
+ --swiper-bg: rgba(240, 239, 235, 1);
+ --swiper-card-bg: rgba(252, 252, 252, 1);
+--swiper-star-color: rgba(0, 182, 122, 1);
+--aboutus-subscribe:rgba(102, 119, 68, 1);
+--dark-bg: rgba(0, 0, 0, 0.35);
+--elements-star-color: rgba(222, 164, 83, 1);
+--linethrough-text: rgba(145, 151, 152, 1);
+
+ /* font size */
+ --ten-pixel: 10px;
+ --twelve-pixel: 12px;
+ --thirteen-pixel: 13px;
+ --fourteen-pixel: 14px;
+ --fifteen-pixel: 15px;
+ --eighteen-pixel: 18px;
+ --sixteen-pixel: 16px;
+ --seventeen-pixel: 17px;
+ --fiftysix-pixel: 56px;
+ --twenty-pixel: 20px;
+ --twentyone-pixel: 21px;
+ --twentytwo-pixel: 22px;
+ --twentyfour-pixel: 24px;
+ --seventytwo-pixel: 72px;
+ --twentyfive-pixel: 25px;
+ --thirty-pixel: 30px;
+ --thirtysix-pixel: 36px;
+ --forty-pixel: 40px;
+ --fortyone-pixel: 41px;
+ --fortytwo-pixel: 42px;
+}
+
+@media only screen and (max-width: 1024px){
+ button{
+  font-size: var(--twelve-pixel) !important;
+ }
+}
